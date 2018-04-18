@@ -68,6 +68,7 @@ Socket&
 Socket::operator=(int c_socket)
 {
     m_socket_fd = c_socket;
+    return *this;
 }
 
 bool

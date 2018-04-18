@@ -5,10 +5,10 @@
 #ifndef CLIENT_TCPCONNECTOR_H
 #define CLIENT_TCPCONNECTOR_H
 
-#include "sources/headers/service_header.h"
+#include "sources/headers/service_header.h" 
+#include "sources/headers/address_geters.h"
 #include <iostream>
 #include "sources/headers/Socket.h"
-//#include "sources/headers/address_geters.h"
 
 
 class TCPConnector

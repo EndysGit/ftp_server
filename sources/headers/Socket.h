@@ -14,7 +14,7 @@ class Socket
 public:
     using file_descriptor_type  =   int64_t;
     using domain_type           =   uint16_t;
-    using socket_type           =   uint16_t;
+    using socket_type           =   int64_t;
     using protocol_type         =   uint16_t;
 
     explicit Socket(domain_type domain = 0,

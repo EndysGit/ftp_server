@@ -5,9 +5,8 @@
 #include "sources/headers/Client.h"
 
 
-void Client::conect_to_server(const std::string& server_ip_address, uint16_t port)
+void Client::conect_to_server(const std::string& server_ip_address)
 {
-    m_conector.set_port(port);
     m_conector.connect_to(server_ip_address);
 }
 

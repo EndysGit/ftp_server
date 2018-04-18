@@ -18,7 +18,7 @@ public:
     Client() = default;
     ~Client() = default;
 
-    void conect_to_server(const std::string& server_ip_address, uint16_t port);
+    void conect_to_server(const std::string& server_ip_address);
 
     template <typename InternetInputStream = TCPInputStream>
     void send_file(const std::string& file_path, InternetInputStream& stream);

@@ -21,17 +21,10 @@ int main(int argc, char const *argv[])
     std::cout << "Please, type IP address: ";
     std::string ip_str;
     std::cin >> ip_str;
-
-    std::cout << "Plese, type port: ";
-    uint16_t port;
-    std::cin >> port;
-
     try
     {
         Client client;
-
-        client.conect_to_server(ip_str, port);
-
+        client.conect_to_server(ip_str);
         std::cout << "Please type full path to file:\n";
         std::string file_path_str;
         std::cin >> file_path_str;

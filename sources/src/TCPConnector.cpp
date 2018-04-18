@@ -27,17 +27,31 @@ void TCPConnector::set_port(uint16_t port) noexcept
 void
 TCPConnector::connect_to(const std::string &destionation_address)
 {    
+    /* Legacy
+     * 
+    if (!is_domain_name(destionation_address))
+    {    
+        if(inet_pton(c_IPv4, destionation_address.c_str(), &m_destination_address.sin_addr) <= 0)
+        {
+            std::cout << "\nInvalid address/ Address not supported \n";
+            throw connection_fail("Connection fail");
+        }
 
-    if(inet_pton(c_IPv4, destionation_address.c_str(), &m_destination_address.sin_addr) <= 0)
-    {
-        std::cout << "\nInvalid address/ Address not supported \n";
-        throw connection_fail("Connection fail");
+        if (connect(m_socket, (struct sockaddr *)&m_destination_address, sizeof(m_destination_address)) < 0)
+        {
+            std::cout << "\nConnection Failed \n";
+            throw connection_fail("Connection fail");
+        }
     }
+    */
+        sockaddr *address_information;
+        socklen_t socklen;
+        std::tie(address_information, m_socket, socklen) = domain_get_address(destionation_address);
 
-    if (connect(m_socket, (struct sockaddr *)&m_destination_address, sizeof(m_destination_address)) < 0)
-    {
-        std::cout << "\nConnection Failed \n";
-        throw connection_fail("Connection fail");
-    }
+        if (connect(m_socket, address_information, socklen) < 0)
+        {
+            std::cout << "\nConnection Failed \n";
+            throw connection_fail("Connection fail");
+        }
     std::cout << "Connection established'\n";
 }
