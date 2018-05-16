@@ -15,7 +15,9 @@
 #include <arpa/inet.h>
 #include "sources/headers/service_header.h"
 
-unsigned long read_short_str(int c_socket, std::string& result_str);
+int64_t read_short_str(int c_socket, std::string& result_str);
+
+int64_t read_data(int c_socket, std::string& result_str, int64_t timeout = 500);
 
 int send_short_str(int c_socket, const std::string& str);
 

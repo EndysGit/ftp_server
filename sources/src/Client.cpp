@@ -5,9 +5,12 @@
 #include "sources/headers/Client.h"
 
 
-void Client::conect_to_server(const std::string& server_ip_address)
+void 
+Client::conect_to_server(const std::string& server_ip_address)
 {
     m_conector.connect_to(server_ip_address);
 }
 
+// File transfer conection
+// -----------------------
 

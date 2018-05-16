@@ -17,12 +17,15 @@ public:
     using addres_type = struct sockaddr_in;
 
     TCPConnector();
+    TCPConnector(const TCPConnector &connectior);
 
     ~TCPConnector() = default;
 
-    int get_socket() const noexcept;
+    const Socket& get_socket() const noexcept;
     void set_port(uint16_t port) noexcept;
     void connect_to(const std::string& destionation_address);
+    void drop_conection();
+    bool is_valid();
 
 private:
     addres_type m_destination_address;

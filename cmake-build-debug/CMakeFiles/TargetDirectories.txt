@@ -1,0 +1,3 @@
+/Volumes/Date/ProgrammingProjects/cppFolder/ftp_client/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Volumes/Date/ProgrammingProjects/cppFolder/ftp_client/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Volumes/Date/ProgrammingProjects/cppFolder/ftp_client/cmake-build-debug/CMakeFiles/client.dir

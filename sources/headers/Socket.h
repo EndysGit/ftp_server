@@ -28,6 +28,7 @@ public:
     operator int() const noexcept { return static_cast<int>(m_socket_fd); }
     Socket& operator=(Socket&& socket);
     Socket& operator=(int c_socket);
+    const int& c_socket() const noexcept;
     bool isValid() const noexcept;
     void createSocket();
     auto getSocketDomain() const noexcept -> domain_type;

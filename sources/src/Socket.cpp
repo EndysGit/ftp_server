@@ -74,7 +74,16 @@ Socket::operator=(int c_socket)
 bool
 Socket::isValid() const noexcept
 {
-    return m_socket_fd >= 0;
+    int is_valid;
+    std::string check_str("check_str");
+    is_valid = send(m_socket_fd, check_str.data(), check_str.size(), 0);
+    return is_valid >= 0;
+}
+
+const int&
+Socket::c_socket() const noexcept
+{
+    return m_socket_fd;
 }
 
 void
