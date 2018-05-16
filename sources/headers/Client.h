@@ -104,8 +104,6 @@ public:
                                 continue;            
                             }
 
-                            
-                            
                             out.open(args.at(1), std::ios::binary);
 
                             server_answer = this->send_ftp_command("");
