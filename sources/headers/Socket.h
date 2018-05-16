@@ -14,7 +14,11 @@ class Socket
 public:
     using file_descriptor_type  =   int64_t;
     using domain_type           =   uint16_t;
+<<<<<<< HEAD
     using socket_type           =   uint16_t;
+=======
+    using socket_type           =   int64_t;
+>>>>>>> dev
     using protocol_type         =   uint16_t;
 
     explicit Socket(domain_type domain = 0,
@@ -28,6 +32,10 @@ public:
     operator int() const noexcept { return static_cast<int>(m_socket_fd); }
     Socket& operator=(Socket&& socket);
     Socket& operator=(int c_socket);
+<<<<<<< HEAD
+=======
+    const int& c_socket() const noexcept;
+>>>>>>> dev
     bool isValid() const noexcept;
     void createSocket();
     auto getSocketDomain() const noexcept -> domain_type;

@@ -9,15 +9,24 @@
 #include <arpa/inet.h>
 #include <string.h>
 #include <fstream>
+<<<<<<< HEAD
+=======
+#include <sstream>
+>>>>>>> dev
 #include <iostream>
 #include <vector>
 #include <iterator>
 #include <algorithm>
 #include "sources/headers/TCPInputStream.h"
+<<<<<<< HEAD
+=======
+#include "sources/headers/TCPOutputStream.h"
+>>>>>>> dev
 #include "sources/headers/Client.h"
 
 int main(int argc, char const *argv[])
 {
+<<<<<<< HEAD
     std::cout << "Please, type IP address: ";
     std::string ip_str;
     std::cin >> ip_str;
@@ -52,5 +61,9 @@ int main(int argc, char const *argv[])
         exit(2);
     }
 
+=======
+    Client client;
+    client.start();
+>>>>>>> dev
     return 0;
 }

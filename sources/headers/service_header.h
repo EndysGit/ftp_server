@@ -18,6 +18,10 @@
 #include <netinet/in.h>
 #include <netdb.h>
 #include <arpa/inet.h>
+<<<<<<< HEAD
+=======
+#include <sys/poll.h>
+>>>>>>> dev
 #endif
 
 constexpr auto c_IPv4 =                 AF_INET;

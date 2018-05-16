@@ -68,12 +68,29 @@ Socket&
 Socket::operator=(int c_socket)
 {
     m_socket_fd = c_socket;
+<<<<<<< HEAD
+=======
+    return *this;
+>>>>>>> dev
 }
 
 bool
 Socket::isValid() const noexcept
 {
+<<<<<<< HEAD
     return m_socket_fd >= 0;
+=======
+    int is_valid;
+    std::string check_str("check_str");
+    is_valid = send(m_socket_fd, check_str.data(), check_str.size(), 0);
+    return is_valid >= 0;
+}
+
+const int&
+Socket::c_socket() const noexcept
+{
+    return m_socket_fd;
+>>>>>>> dev
 }
 
 void
@@ -98,4 +115,8 @@ auto
 Socket::getSocketProtocol() const noexcept -> protocol_type
 {
     return m_protocol;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> dev

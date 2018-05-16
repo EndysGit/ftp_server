@@ -23,6 +23,10 @@ set(SOURCE_FILES
         sources/headers/service_header.h
         sources/src/service_header_impl.cpp
         sources/headers/address_geters.h
+<<<<<<< HEAD
+=======
+        sources/src/address_geters.cpp
+>>>>>>> dev
 
         # Socket
         sources/src/Socket.cpp

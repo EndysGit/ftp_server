@@ -1,0 +1,94 @@
+
+0. Invalid socket was created
+
+1. Try to create socket
+
+2. Socket is successfully created with id: 4
+
+3. Socket was moved
+
+4. Invalid socket was destoyed
+
+5. Invalid socket was created
+
+6. Try to create socket
+
+7. Socket is successfully created with id: 7
+
+8. Socket was moved
+
+9. Invalid socket was destoyed
+
+10. Fail to read from socket
+
+11. Fail to read from socket
+
+12. Fail to read from socket
+
+13. Fail to read from socket
+
+14. Fail to read from socket
+
+15. Socket was closed: 8
+
+16. Invalid socket was created
+
+17. Try to create socket
+
+18. Socket is successfully created with id: 8
+
+19. Socket was moved
+
+20. Invalid socket was destoyed
+
+21. Socket was closed: 9
+
+22. Invalid socket was created
+
+23. Try to create socket
+
+24. Socket is successfully created with id: 9
+
+25. Socket was moved
+
+26. Invalid socket was destoyed
+
+27. Socket was closed: 10
+
+28. Invalid socket was created
+
+29. Try to create socket
+
+30. Socket is successfully created with id: 10
+
+31. Socket was moved
+
+32. Invalid socket was destoyed
+
+33. Fail to read from socket
+
+34. Fail to read from socket
+
+35. Fail to read from socket
+
+36. Fail to read from socket
+
+37. Fail to read from socket
+
+38. Socket was closed: 11
+
+39. Invalid socket was created
+
+40. Try to create socket
+
+41. Socket is successfully created with id: 11
+
+42. Socket was moved
+
+43. Invalid socket was destoyed
+
+44. Socket was closed: 12
+
+45. Fail to read from socket
+
+46. Socket was closed: 5
